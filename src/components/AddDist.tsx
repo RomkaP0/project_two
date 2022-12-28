@@ -14,14 +14,14 @@ export default function AddDist(){
             return
         }
 
-        // const  distanceCollRef = collection(db, 'UserDistance')
-        // addDoc(distanceCollRef, {Distance:numDist}).then(response=>{
-        //     console.log(response.id)
-        // }).catch(error=> {
-        //     console.log(error.message)
-        // })
-        //
-        // alert(Distance)
+        const  distanceCollRef = collection(db, 'UserDistance')
+        addDoc(distanceCollRef, {Distance:numDist}).then(response=>{
+            console.log(response.id)
+        }).catch(error=> {
+            console.log(error.message)
+        })
+
+        alert(Distance)
     }
 
     return(

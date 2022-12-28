@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import {addDoc, collection} from "firebase/firestore";
+import {doc, updateDoc} from "firebase/firestore";
 import {db} from "../lib/init-firebase";
+
 
 function ChangeDist() {
     const [Distance, setDist]= useState('')
@@ -12,15 +13,12 @@ function ChangeDist() {
         if (Distance ===''||isNaN(numDist)){
             return
         }
-
-        const  distanceCollRef = collection(db, 'UserDistance')
-        addDoc(distanceCollRef, {Distance:numDist}).then(response=>{
-            console.log(response.id)
-        }).catch(error=> {
-            console.log(error.message)
-        })
-
-        alert(Distance)
+        const docRef =  doc(db, 'UserDistance', id)
+        updateDoc(docRef,{Distance})
+            .then(responce=>{
+                console.log(responce)
+            })
+            .catch(error=> console.log(error.message))
     }
 
     return(
