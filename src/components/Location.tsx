@@ -43,6 +43,10 @@ const Location = () => {
                 <td>speed</td>
                 <td>{coords.speed}</td>
             </tr>
+            <tr>
+                <td>accuracy</td>
+                <td>{coords.accuracy}</td>
+            </tr>
             </tbody>
         </table>
     ) : (
