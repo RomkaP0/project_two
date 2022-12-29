@@ -68,11 +68,6 @@ const resources = [
     },
     { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
 ]
-const recentPosts = [
-    { id: 1, name: 'Boost your conversion rate', href: '#' },
-    { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-    { id: 3, name: 'Improve your customer experience', href: '#' },
-]
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
@@ -165,9 +160,7 @@ export default function Example() {
                             )}
                         </Popover>
 
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                            Pricing
-                        </a>
+
                         <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Docs
                         </a>
@@ -216,26 +209,6 @@ export default function Example() {
                                                             </div>
                                                         </a>
                                                     ))}
-                                                </div>
-                                                <div className="bg-gray-50 px-5 py-5 sm:px-8 sm:py-8">
-                                                    <div>
-                                                        <h3 className="text-base font-medium text-gray-500">Recent Posts</h3>
-                                                        <ul role="list" className="mt-4 space-y-4">
-                                                            {recentPosts.map((post) => (
-                                                                <li key={post.id} className="truncate text-base">
-                                                                    <a href={post.href} className="font-medium text-gray-900 hover:text-gray-700">
-                                                                        {post.name}
-                                                                    </a>
-                                                                </li>
-                                                            ))}
-                                                        </ul>
-                                                    </div>
-                                                    <div className="mt-5 text-sm">
-                                                        <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                                                            View all posts
-                                                            <span aria-hidden="true"> &rarr;</span>
-                                                        </a>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </Popover.Panel>
