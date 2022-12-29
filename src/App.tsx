@@ -1,15 +1,16 @@
 import React from 'react';
-import ListCars from "./components/ListCars";
-import AddDist from "./components/AddDist";
-import WatchDist from "./components/WatchDist";
-import ChangeDist from "./components/ChangeDist";
 import MapContainer from './components/MapContainer';
 import ComponentWithGeolocation from "./components/Location";
+import Example from "./components/example"
 
 
 function App() {
     return (
-        <div className="container">
+        <div className="">
+            <header className="">
+                <Example/>
+
+            </header>
             <MapContainer/>
             <ComponentWithGeolocation/>
         </div>
