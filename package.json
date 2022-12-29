@@ -18,6 +18,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-geolocated": "^4.0.3",
+    "react-hook-geolocation": "^1.1.0",
+    "react-navigator-geolocation": "^1.0.8",
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.4",

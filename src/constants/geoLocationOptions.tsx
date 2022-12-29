@@ -1,5 +1,9 @@
-export const geolocationOptions = {
-    enableHighAccuracy: true,
-    timeout: 1000 * 60 * 1, // 1 min (1000 ms * 60 sec * 1 minute = 60 000ms)
-    maximumAge: 1000 * 3600 * 24, // 24 hour
+const MAXIMUM_AGE = 150000;
+const TIMEOUT = 150000;
+const ENABLE_HIGH_ACCURACY = true;
+
+export const DEFAULT_POSITION_OPTIONS = {
+    enableHighAccuracy: ENABLE_HIGH_ACCURACY,
+    timeout: TIMEOUT,
+    maximumAge: MAXIMUM_AGE
 };
