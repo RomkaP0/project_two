@@ -10,7 +10,7 @@ export default function App() {
 
     return (
         <YMaps>
-            <Map width="100vw" height="25vw" defaultState={defaultState}>
+            <Map width="100vw" height="50vw" defaultState={defaultState}>
                 <Placemark  geometry={[56.484758, 84.938521]} />
                 <GeolocationControl options={{ float: "left" }} />
             </Map>
