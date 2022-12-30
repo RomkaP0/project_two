@@ -1,7 +1,8 @@
 import React from 'react';
 import MapContainer from './components/MapContainer';
 import ComponentWithGeolocation from "./components/Location";
-import Example from "./components/example"
+import Example from "./components/Header"
+import {BrowserRouter as Router} from "react-router-dom";
 
 
 function App() {
