@@ -6,7 +6,7 @@ import ComponentWithGeolocation from "./components/Location";
 function Main() {
     return (
         <div className="">
-            <MapContainer/>
+            {/*<MapContainer/>*/}
             <ComponentWithGeolocation/>
         </div>
     )
